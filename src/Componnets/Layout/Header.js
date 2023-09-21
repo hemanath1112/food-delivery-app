@@ -4,12 +4,12 @@ import classes from './Header.module.css'
 
 
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment >
         <header className={classes.header}>
             <h2 className={classes.title}>React<span>Meals</span></h2>
-            <HeaderButtonCart />
+            <HeaderButtonCart show={props.showHandler}/>
         </header>
         <div >
             <img src="https://assets3.thrillist.com/v1/image/3130793/1584x1188/scale;webp=auto;jpeg_quality=60;progressive.jpg" alt="Foods" className={classes.image} />

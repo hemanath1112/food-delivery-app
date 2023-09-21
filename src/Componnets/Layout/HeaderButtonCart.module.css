@@ -9,6 +9,7 @@
     border-radius: 20px;  
     transition: 0.2s ease;
     cursor: pointer;
+    border: none;
 }
 .cart:hover{
     background-color: rgba(124, 21, 21, 0.911);
