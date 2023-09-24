@@ -1,8 +1,9 @@
-import React, {Fragment, useState} from 'react'
+import React, { useState} from 'react'
 import Header from './Componnets/Layout/Header'
 import './App.css'
 import Meals from './Componnets/Meals/Meals'
 import Cart from './Componnets/Cart/cart'
+import CartProviedre from './Store/CartProviedre'
 
 const App = () => {
 
@@ -17,11 +18,11 @@ const hideHandler = ()=>{
 }
 
   return (
-    <Fragment >
+    <CartProviedre>
       {cartshow && <Cart  hideHandler={hideHandler}/>}
       <Header showHandler={showHandler} />
       <Meals />
-    </Fragment> 
+    </CartProviedre> 
   )
 }
 
